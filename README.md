@@ -1,7 +1,7 @@
 
 ## DOFAS-GCN Training
 
-This project provides a script for training the DOFAS-GCN (Deep Oversampling for Feature Augmentation and Sampling - Graph Convolutional Networks) model on the arxiv and reddit datasets.
+This project provides a script for training a GNN model using Dynamic Adaptive Fanout Optimization Sampler (DAFOS) on the arxiv and reddit datasets.
 
 ### Requirements
 #### OS: 
@@ -39,19 +39,7 @@ python main_args.py --dataset <dataset_name> --n_epochs <number_of_epochs> --pat
 ```
 
 
-
-
-## Default Values
-
-If you don’t provide any command-line arguments, the script will use the following default values:
-
-- **Dataset**: arxiv
-- **Number of Epochs**: 4
-- **Path**: /datasets
-- **Batch Size**: 1024
-- **Model**: DOFAS-GCN
-
-## Arguments
+## Arguments and Default Values
 - `--dataset`: (str) The name of the dataset to use for training. Options: `arxiv` (default) or `reddit`.
 
 - `--n_epochs`: (int) The number of epochs to train the model. Default is `300`.
@@ -70,7 +58,7 @@ If you don’t provide any command-line arguments, the script will use the follo
 
 
 ### Example Command
-To train a GCN model on the arxiv dataset for 10 epochs with a batch size of 512, you would run:
+To train a DOFAS-GCN model on the arxiv dataset for 300 epochs with a batch size of 1024, you would run:
 ```bash
 python main_args.py --dataset arxiv --n_epochs 300 --batch_size 1024 --n_trial 5
 ```
