@@ -1,5 +1,5 @@
 
-## DOFAS-GCN Training
+## DOFAS
 
 This project provides a script for training a GNN model using Dynamic Adaptive Fanout Optimization Sampler (DAFOS) on the arxiv and reddit datasets.
 
